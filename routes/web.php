@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/api', [ApiController::class, 'Index']);
+Route::get('/api/generatequotes/{num}', [ApiController::class, 'GenerateQuotes']);
+Route::get('/api/newgame/{num}', [ApiController::class, 'newGame']);
